@@ -22,7 +22,11 @@ paragraphs[2].style.textAlign = 'left';
 const cells = document.querySelectorAll('td');
 
 cells.forEach((cell, index) => {
-    if (index % 2 === 0) {
-        cell.classList.add('selected');
-    }
+    if (cells.length > 0) {
+    cells.forEach((cell, index) => {
+        if (index % 2 === 0) {
+            cell.classList.add('selected');
+        }
+    });
+}
 });
