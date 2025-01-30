@@ -1,23 +1,18 @@
 document.body.style.fontFamily = "Arial";
 const paragraphs = document.querySelectorAll('p');
 
-paragraphs[0].style.color = 'orange';
-paragraphs[0].style.backgroundColor = 'yellow';
-paragraphs[0].style.fontSize = '16px';
-paragraphs[0].style.padding = '5px';
-paragraphs[0].style.textAlign = 'center';
+const styles = [
+    { color: 'orange', backgroundColor: 'yellow', fontSize: '16px', textAlign: 'center' },
+    { color: 'blue', backgroundColor: 'lightBlue', fontSize: '14px', textAlign: 'right' },
+    { color: 'red', backgroundColor: 'lightCoral', fontSize: '12px', textAlign: 'left' }
+];
 
-paragraphs[1].style.color = 'blue';
-paragraphs[1].style.backgroundColor = 'lightBlue';
-paragraphs[1].style.fontSize = '14px';
-paragraphs[1].style.padding = '5px';
-paragraphs[1].style.textAlign = 'right';
-
-paragraphs[2].style.color = 'red';
-paragraphs[2].style.backgroundColor = 'lightCoral';
-paragraphs[2].style.fontSize = '12px';
-paragraphs[2].style.padding = '5px';
-paragraphs[2].style.textAlign = 'left';
+paragraphs.forEach((p, index) => {
+    if (styles[index]) {
+        Object.assign(p.style, styles[index]);
+        p.style.padding = '5px';
+    }
+});
 
 const cells = document.querySelectorAll('td');
 
