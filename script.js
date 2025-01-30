@@ -13,7 +13,9 @@ paragraphs[1].style.fontSize = '14px';
 paragraphs[1].style.padding = '5px';
 paragraphs[1].style.textAlign = 'right';
 
-paragraphs[2].style.color = 'red';
+if (paragraphs.length > 2) {
+    paragraphs[2].style.color = 'red';
+}
 paragraphs[2].style.backgroundColor = 'lightCoral';
 paragraphs[2].style.fontSize = '12px';
 paragraphs[2].style.padding = '5px';
