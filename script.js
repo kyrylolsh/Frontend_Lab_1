@@ -31,4 +31,5 @@ cells.forEach((cell, index) => {
         }
     });
 }
+    
 });
