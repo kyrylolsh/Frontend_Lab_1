@@ -7,12 +7,14 @@ const styles = [
     { color: 'red', backgroundColor: 'lightCoral', fontSize: '12px', textAlign: 'left' }
 ];
 
+
 paragraphs.forEach((p, index) => {
     if (styles[index]) {
         Object.assign(p.style, styles[index]);
         p.style.padding = '5px';
     }
 });
+
 
 const cells = document.querySelectorAll('td');
 
@@ -24,4 +26,5 @@ cells.forEach((cell, index) => {
         }
     });
 }
+    
 });
