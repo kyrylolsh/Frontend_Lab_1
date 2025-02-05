@@ -8,7 +8,8 @@ table {
     margin: 20px 0;
 }
 
-table, td {
+table,
+td {
     border: 1px solid black;
     text-align: center;
     padding: 10px;
@@ -16,4 +17,32 @@ table, td {
 
 td {
     width: 20%;
+}
+
+p:first-child {
+    color: orange;
+    background-color: yellow;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+}
+
+p:nth-child(2) {
+    color: blue;
+    background-color: lightblue;
+    font-size: 14px;
+    text-align: right;
+    padding: 5px;
+}
+
+p:nth-child(3) {
+    color: red;
+    background-color: lightcoral;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px;
+}
+
+.selected {
+    background-color: lightgray;
 }
